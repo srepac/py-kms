@@ -194,7 +194,7 @@ def server_options():
         server_parser.add_argument("-l", "--lcid", action = "store", dest = srv_options['lcid']['des'], default = srv_options['lcid']['def'],
                                    help = srv_options['lcid']['help'], type = int)
         server_parser.add_argument("-c", "--client-count", action = "store", dest = srv_options['count']['des'] , default = srv_options['count']['def'],
-                                   help = srv_options['count']['help'], type = str)
+                                   help = srv_options['count']['help'], type = int)
         server_parser.add_argument("-a", "--activation-interval", action = "store", dest = srv_options['activation']['des'],
                                    default = srv_options['activation']['def'], help = srv_options['activation']['help'], type = int)
         server_parser.add_argument("-r", "--renewal-interval", action = "store", dest = srv_options['renewal']['des'],
